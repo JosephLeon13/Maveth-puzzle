@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Http\Controllers\AdminAuth;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\ResetsPasswords;
+// Auth Facade
+use Illuminate\Support\Facades\Auth;
+// Password Broker Facade
+use Illuminate\Support\Facades\Password;
+
+
+class ResetPasswordController extends Controller
+{
+
+	// Admin redirect path
+	protected $redirect = 'admin_home';
+
+    // trait for handling reset Password
+    use ResetsPasswords;
+
+    // Show form to seller where they can reset password
+    public function showResetForm(Request $request, $token = null)
+    {
+    	return view('admin.passwords.reset')->with(
+    		['token' => $token, 'email' => $request->email]
+    	);
+    }
+
+    // returns password broker of admin
+    public function broker()
+    {
+    	return Password::broker('admins');
+    }
+
+    // returns authentication guard of admin
+    protected function guard()
+    {
+    	return Auth::guard('web_admin');
+    }
+}

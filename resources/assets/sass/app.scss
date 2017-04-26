@@ -1,0 +1,331 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*main page puzzle (circle, number(s), word)*/
+
+.void {
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	margin: auto;
+	margin-top: 20%;
+	background-color: black;
+}
+
+.random {
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	text-align: center;
+}
+
+.pt_2 {
+	margin:auto;
+	text-align: center;
+
+}
+
+.mvvt {
+	margin-top: 3%;
+}
+
+.six {
+	color: white;
+	text-decoration: none;
+}
+
+.six:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/*welcome_2, lock*/
+
+.p_2 {
+	background-color: black;
+}
+
+#al {
+	height: auto;
+	width: 30%;
+	
+}
+
+#al:hover {
+	background-color: white;
+}
+
+.black_sun {
+	background-color: white;
+	height: 25%;
+	width: auto;	
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.left_c, .right_c {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 6%;
+	
+}
+
+.left_c {
+	float: left;
+}
+
+.right_c {
+	float: right;
+}
+
+.centerLock {
+	text-align: center;
+	list-style: none;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.lock {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	background-color: black;
+	text-align: center;
+}
+
+.secretLock {
+	float: left;
+	color: white;
+}
+
+.lantern {
+	position: fixed;
+	color: white;
+	top: 70%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	width: 50%;
+}
+
+.register {
+	color: white;
+}
+
+.register:hover {
+	color: white;
+}
+
+.login {
+	color: white;
+}
+
+.login:hover {
+	color: white;
+}
+
+/*login/registration/checkbox*/
+
+.btn-primary {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+.btn-primary:active {
+	background: black !important;	
+}
+
+.btn-primary:hover {
+	background-color: black;
+}
+
+.btn-link { 
+	color: black;
+}
+
+.btn-link:hover {
+	color: black;
+}
+
+.panel_2 {
+	margin-top: 30%;
+	border: none !important;
+	border-bottom: none !important;
+	box-shadow: none;
+}
+
+.heading_2 {
+	border: none !important;
+	text-align: center;	
+}
+
+.two {
+	overflow-y: hidden !important;
+	border: none!important;
+}
+
+input[type="checkbox"]:checked {
+	background: black !important;
+}
+
+/*Home*/
+
+.alert-danger {
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+}
+
+.layer_1 {
+	margin: auto;
+}
+
+.manifestation_1 {
+	list-style: none;
+	display: inline;
+	float: left;
+	padding-left: 0;
+
+}
+
+.manifestation_2, .manifestation_4, .manifestation_6 {
+	list-style: none;
+	float: right;	
+}
+
+.manifestation_3, .manifestation_5 {
+	list-style: none;
+	display: inline;
+	float: left;	
+}
+
+.alpha {
+	margin-top: 50%;
+}
+
+
+.man_all {
+	margin-top: 6%;
+}
+
+#maveth_1 {
+	float: left;
+	width: 15%;
+	height: auto;
+}
+
+#maveth_2 {
+	float: right;
+	width: 15%;
+	height: auto;
+}
+
+#maveth_1, #maveth_2 {
+	margin-top: 6%;	
+}
+
+.melek {
+	background-image: url('/img/melek.jpg');
+	background-size: 19% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*chat form, body*/
+
+.chat-panel {
+	margin-top: 23%;
+	background-color: black;	
+	border: none;
+}
+
+.heading_chat {
+	text-align: center;
+	color: white !important;
+	background-color: black !important;
+	border: none;
+}
+
+.panel-footer {
+	background-color: black !important;
+	
+	
+}
+
+.chat-input {
+	background-color: black;
+	
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .chat li {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+
+  .chat li .chat-body {
+    margin: 0;
+    color: white;
+    background-color: black;
+  }
+
+  .panel-body {
+    overflow-y: scroll;
+    height: 350px;
+  }
+
+  ::-webkit-input-placeholder {
+  color: white !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: black;
+  }
+
+  /*Nav*/
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-header {
+	text-align: center;
+	color: white !important;
+}
+
